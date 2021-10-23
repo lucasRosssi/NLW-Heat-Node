@@ -38,7 +38,7 @@ class AuthenticateUserService {
       }
     })
 
-    const response = await axios.get<IUserResponse>('hhtps://api.github.com/user', {
+    const response = await axios.get<IUserResponse>('https://api.github.com/user', {
       headers: {
         authorization: `Bearer ${accessTokenResponse.access_token}`
       }
